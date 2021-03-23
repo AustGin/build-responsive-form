@@ -42,7 +42,6 @@ section {
 }
 
 fieldset {
-    max-width: 40.625rem;
     padding: 0;
     border: none;
     background-color: var(--white);
@@ -50,6 +49,8 @@ fieldset {
     border-radius: 5px;
     overflow: hidden;
 }
+
+
 
 fieldset > p {
     background-color: var(--lg-green);
