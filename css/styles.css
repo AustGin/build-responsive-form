@@ -42,6 +42,7 @@ section {
 }
 
 fieldset {
+    max-width: 40.625rem;
     padding: 0;
     border: none;
     background-color: var(--white);
@@ -69,6 +70,7 @@ fieldset > div {
 
 .flex-container > div {
     flex: 0 1 50%;
+    margin-bottom: 0.75rem;
 }
 
 fieldset > div > label {
@@ -87,7 +89,7 @@ fieldset > div > input {
 fieldset > div > input[type=submit] {
     background-color: var(--lg-blue);
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 fieldset > div > input[type=submit]:hover {
@@ -102,4 +104,34 @@ fieldset a {
 
 fieldset a:hover {
     color: var(--dk-green);
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+    }
+    
+    fieldset {
+        width: 40.625rem;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    section > div:nth-child(1) {
+        flex: 1 0 35%;
+    }
+
+    .container div:first-of-type {
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        max-width: 90rem;
+    }
 }
